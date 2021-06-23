@@ -1,0 +1,115 @@
+body {
+	margin: 0;
+	padding: 0;
+	font-family: 'Source Sans Pro', sans-serif;
+	color: #666;
+	line-height: 1;
+}
+
+header {
+	font-size: 20px;
+	font-weight: 600;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: 300;
+}
+
+.container {
+	max-width: 1600px;
+	margin: 0 auto;
+}
+
+.container-fluid {
+	max-width: 100%;
+}
+
+.row {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	width: 100%;
+}
+
+.column {
+	display: flex;
+	flex-direction: column;
+	flex-basis: 100%;
+	flex: 1;
+	align-content: center;
+}
+
+.title {
+	color: #1f2857;
+}
+
+
+.btn {
+	padding: 0.75em;
+	background-color: #fa6400;
+	color: #fff;
+	font-size: 16px;
+	font-weight: 600;
+}
+
+.btn:after {
+	display: inline-block;
+	content: '';
+	width: 0.25em;
+	height: 0.25em;
+	margin-left: 20px;
+	border-style: solid;
+	border-width: 0.15em 0.15em 0 0;
+	transform: rotate(45deg);
+}
+
+.test {
+	border: 2px solid red;
+}
+
+/* Navigation styles */
+nav img {
+	max-width: 100%;
+}
+
+nav ul {
+	list-style: none;
+}
+
+nav li {
+	display: inline;
+}
+
+nav a {
+	padding: 0.25em 0.5em;
+	text-decoration: none;
+	color: #1f2857;
+}
+
+/* Hero styles */
+
+
+/* Content styles */
+.content {
+	font-size: 16px;
+	font-weight: 400;
+}
+
+
+/* MEDIA QUERIES */
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {}
