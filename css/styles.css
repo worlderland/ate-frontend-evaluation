@@ -1,3 +1,7 @@
+ul {
+	padding: 0;
+}
+
 body {
 	margin: 0;
 	padding: 0;
@@ -20,9 +24,15 @@ h6 {
 	font-weight: 300;
 }
 
+img {
+	width: 100%;
+	height: auto;
+}
+
 .container {
-	max-width: 1600px;
+	max-width: 1500px;
 	margin: 0 auto;
+	padding: 10px 20px;
 }
 
 .container-fluid {
@@ -31,30 +41,44 @@ h6 {
 
 .row {
 	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	width: 100%;
+	flex-flow: row wrap;
+	justify-content: space-around;
 }
 
 .column {
 	display: flex;
 	flex-direction: column;
-	flex-basis: 100%;
-	flex: 1;
-	align-content: center;
 }
+
+.padding-1 {
+	padding: 1em;
+}
+
+.padding-2 {
+	padding: 2em;
+}
+
+.padding-3 {
+	padding: 3em;
+}
+
 
 .title {
 	color: #1f2857;
 }
 
-
 .btn {
 	padding: 0.75em;
+	border: 1px solid #fa6400;
 	background-color: #fa6400;
 	color: #fff;
 	font-size: 16px;
 	font-weight: 600;
+}
+
+.btn:hover {
+	background-color: #fff;
+	color: #fa6400;
 }
 
 .btn:after {
@@ -74,7 +98,9 @@ h6 {
 
 /* Navigation styles */
 nav img {
-	max-width: 100%;
+	width: 100%;
+	max-width: 300px;
+	margin: auto;
 }
 
 nav ul {
@@ -91,25 +117,78 @@ nav a {
 	color: #1f2857;
 }
 
-/* Hero styles */
+nav a:hover {
+	color: #fa6400;
+}
+
+.nav-central-links {
+	text-align: center;
+}
+
+.nav-right-links {
+	text-align: center;
+}
+
+/* Banner styles */
 
 
 /* Content styles */
 .content {
+	padding: 1em;
 	font-size: 16px;
 	font-weight: 400;
 }
 
+/* Footer styles */
+footer {
+	background-color: #ebebeb;
+	border-top: 1px solid #ccc;
+}
+
+footer h2 {
+	text-align: center;
+	margin-bottom: 50px;
+}
+
+.footer-item {
+	padding: 0.5em;
+}
+
+.footer-item img {
+	margin: 0 auto;
+}
 
 /* MEDIA QUERIES */
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {}
 
 /* Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) {}
+@media (min-width: 768px) {
+	
+
+}
 
 /* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) {}
+@media (min-width: 992px) {
+	.column {
+		flex-basis: 100%;
+		flex: 1
+	}
+
+	.nav-central-links {
+		text-align: left;
+	}
+	
+	.nav-right-links {
+		text-align: right;
+	}
+
+	.content {
+		padding: 3em;
+		font-size: 16px;
+		font-weight: 400;
+	}
+}
 
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {}
