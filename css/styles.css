@@ -164,15 +164,16 @@ footer h2 {
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
-	
 
+	.content .btn {
+		max-width: 100px;
+	}
 }
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
 	.column {
-		flex-basis: 100%;
-		flex: 1
+		flex: 1;
 	}
 
 	.nav-central-links {
@@ -185,8 +186,10 @@ footer h2 {
 
 	.content {
 		padding: 3em;
-		font-size: 16px;
-		font-weight: 400;
+	}
+
+	.footer-item {
+		padding: 0.5em;
 	}
 }
 
